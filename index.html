@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="navbar">
+  <div class="nav-left"><img src="list-check-solid-full (2).svg" alt="ListIt Logo" class="logo">ListiT</div>
+  
+  <ul class="nav-right">
+    <li><a href="#" id="nav-all">All</a></li>
+    <li><a href="#" id="nav-completed">Completed</a></li>
+    <li>
+      <select id="priority-filter" class="priority-select">
+    <option value="all">Priority</option>
+     <option value="high">High </option>
+    <option value="medium">Medium </option>
+    <option value="low">Low </option>
+        </select>
+</li>
+    <li><a href="#" id="nav-about">About</a></li>
+    
+  </ul>
+  
+</nav>
+
+
+    <div class="container">
+        <div class="todo-app">
+            <h1>To Do List</h1>
+            <form class="input-area">
+                <div class="input-group">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                </div>
+                <div class="input-group">
+                <input type="text" id="task-desc" placeholder="Add description...">
+                </div>
+                
+                
+                <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <div class="form-spacer"></div>
+            <div class="task-counts" id="total-tasks"id="completed-tasks"
+</div>      
+            <div class="todo-container">
+                <ul id="task-list"></ul>
+                <div>
+                <img class="empty-image" src="b8ac0a1b4f03e7f7e76d49ebab824a66.jpg " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html> 
